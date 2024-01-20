@@ -1,8 +1,8 @@
 {
-  "name": "vuepress-theme-reco-demo",
-  "version": "2.0.0",
-  "description": "Demo for vuepress-theme-reco@2.x.",
-  "repository": "git@github.com:recoluan/vuepress-theme-reco-demo.git",
+  "name": "Rushing",
+  "version": "1.0.0",
+  "description": "RushWang's blog",
+  "repository": "",
   "author": "reco_luan <recoluan@outlook.com>",
   "license": "MIT",
   "scripts": {
@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "vuepress": "2.0.0-rc.0",
-    "vuepress-theme-reco": "2.0.0-rc.5"
+    "vuepress-theme-reco": "workspace:*"
   }
 }
