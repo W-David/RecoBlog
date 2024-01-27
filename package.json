@@ -3,14 +3,24 @@
   "version": "1.0.0",
   "description": "RushWang's blog",
   "repository": "",
-  "author": "reco_luan <recoluan@outlook.com>",
+  "author": "RushWang",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev .",
-    "start": "vuepress dev .",
-    "build": "vuepress build ."
+    "blog:dev": "vuepress dev .",
+    "blog:build": "vuepress build .",
+    "clean": "pnpm clean:dev && pnpm clean:build",
+    "clean:dev": "rm -r .vuepress/.cache && rm -r .vuepress/.temp",
+    "clean:build": "pnpm -r --parallel clean",
+    "build": "pnpm -r build && pnpm -r --parallel copy",
+    "build:watch": "pnpm -r --parallel build --watch",
+    "copy:watch": "pnpm -r --parallel copy --watch"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-rc.0",
+    "cpx": "^1.5.0",
+    "rimraf": "3.0.2",
+    "typescript": "5.2.2",
+    "vue": "^3.3.8",
     "vuepress": "2.0.0-rc.0",
     "vuepress-theme-reco": "workspace:*"
   }

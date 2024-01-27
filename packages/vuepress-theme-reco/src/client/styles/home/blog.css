@@ -58,11 +58,6 @@
   }
 }
 
-.home-blog-content
-  .info-wrapper
-  .category-wrapper
-  .category-item
-  .category-link
-  .text {
+.home-blog-content .info-wrapper .category-wrapper .category-item .category-link .text {
   @apply dark:text-reco-text-darkmode;
 }

@@ -35,5 +35,5 @@ export default defineUserConfig({
       }
     ]
   })
-  // debug: true,
+  // debug: true
 })
