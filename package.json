@@ -6,12 +6,12 @@
   "author": "RushWang",
   "license": "MIT",
   "scripts": {
-    "blog:dev": "vuepress dev .",
+    "dev": "vuepress dev .",
     "blog:build": "vuepress build .",
     "clean": "pnpm clean:dev && pnpm clean:build",
     "clean:dev": "rm -r .vuepress/.cache && rm -r .vuepress/.temp",
     "clean:build": "pnpm -r --parallel clean",
-    "build": "pnpm -r build && pnpm -r --parallel copy",
+    "build:pkg": "pnpm -r build && pnpm -r --parallel copy",
     "build:watch": "pnpm -r --parallel build --watch",
     "copy:watch": "pnpm -r --parallel copy --watch"
   },
