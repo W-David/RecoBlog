@@ -3,11 +3,13 @@ import recoTheme from 'vuepress-theme-reco'
 
 export default defineUserConfig({
   title: "Mr.Wang's Blog",
+  head: [['link', { rel: 'icon', href: '/filter.png' }]],
   theme: recoTheme({
     style: '@vuepress-reco/style-default',
     logo: '/filter.png',
     author: 'RushWang',
     authorAvatar: '/avater.jpg',
+    primaryColor: '#56CCF2',
     lastUpdatedText: '最后更新于',
     autoSetBlogCategories: true,
     autoAddCategoryToNavbar: {
